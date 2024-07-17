@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Info.swift
 //  StyledApp
 //
 //  Created by Scholar on 7/16/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Info: View {
     var body: some View {
         NavigationStack {
             ZStack(){
@@ -81,7 +81,6 @@ struct ContentView: View {
     }
 }
     #Preview {
-        ContentView()
+       Info()
     }
     
-
