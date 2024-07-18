@@ -16,6 +16,9 @@ struct ContentView: View {
              UIImage(named: "NavyTank"):"Sleeveless"
          ],
          [
+             UIImage(named: "NavyLaceTank"):"Sleeveless"
+         ],
+         [
              UIImage(named: "WhiteTubeTop"):"Sleeveless"
          ],
          [
@@ -55,7 +58,7 @@ struct ContentView: View {
          
        var bottoms =  [
          [
-             UIImage(named: "DenimMiniSkirt"):"Mini"
+             UIImage(named: "BlackDenimSkirt"):"Mini"
          ],
          [
              UIImage(named: "OneTeaspoons"):"Mini"
@@ -65,6 +68,9 @@ struct ContentView: View {
          ],
          [
              UIImage(named: "BlueMidiSkirt"):"Midi"
+         ],
+         [
+             UIImage(named: "8BallShorts"):"Midi"
          ],
          [
              UIImage(named: "WhiteMidi"):"Midi"
@@ -114,6 +120,9 @@ struct ContentView: View {
              UIImage(named: "Sambas"):"Sneakers"
          ],
          [
+             UIImage(named: "BlackSneakers"):"Sneakers"
+         ],
+         [
              UIImage(named: "GoldenGooseSneakers"):"Sneakers"
          ],
      ]
@@ -136,32 +145,77 @@ struct ContentView: View {
                 VStack(){
                     
                     VStack(alignment: .center, spacing: 20) {
-                        Spacer(minLength: 48)
+                    
+                   Spacer(minLength: 48)
+                      //  Image("Styled")
+                            //.resizable()
+                            .aspectRatio(contentMode: .fit)
                             .padding()
                             .frame(width: 400, height: 65)
                             .background(Rectangle()
                                 .cornerRadius(30)
                                 .ignoresSafeArea()
                                 .foregroundColor(Color("Color5")))
+                        
+//                            .padding(.bottom, 650.0)
+//                            .frame(width: 16.0, height: 9.0)
                     
                     }
+                // Image("Styled")
+                        .aspectRatio(contentMode: .fit)
                     VStack {
-                        HStack(spacing: 100) {
+                        HStack(spacing: 60) {
                             Button(action: {
                                 imageToDisplayTop = randomTop()
                             })
                              {
-                                Image(systemName: "line.3.crossed.swirl.circle.fill")
-                            }
+                                 Image(systemName: "line.3.crossed.swirl.circle.fill")
+                                     .foregroundColor(Color("Color6"))
+                                     .font(.system(size: 40))
+                                     
+                             }
+                             
                             if let topImageSeletedTop = imageToDisplayTop {
                                 Image(uiImage: topImageSeletedTop)
                                     .resizable()
-                                    .frame(width: 200, height: 200)
+                                    .frame(width: 190, height: 200)
                             }
                         }
                         
-                        //create h stack for bottoms
-                        //create h stack for shoes
+                        HStack(spacing: 60) {
+                            Button(action: {
+                                imageToDisplayBottom = randomBottom()
+                            })
+                             {
+                                 Image(systemName: "line.3.crossed.swirl.circle.fill")
+                                     .foregroundColor(Color("Color6"))
+                                     .font(.system(size: 40))
+                            }
+                            
+                            if let topImageSeletedBottom = imageToDisplayBottom {
+                                Image(uiImage: topImageSeletedBottom)
+                                    .resizable()
+                                    .frame(width: 200, height: 210)
+                            }
+                        } 
+                        HStack(spacing: 60) {
+                            Button(action: {
+                                imageToDisplayShoe = randomShoe()
+                            })
+                             {
+                                 Image(systemName: "line.3.crossed.swirl.circle.fill")
+                                     .foregroundColor(Color("Color6"))
+                                     .padding(.leading)
+                                     .font(.system(size: 40))
+                            }
+                             .padding(.trailing, 45)
+                            if let topImageSeletedShoe = imageToDisplayShoe {
+                                Image(uiImage: topImageSeletedShoe)
+                                    .resizable()
+                                    .padding(.trailing, 50)
+                                    .frame(width: 170, height: 180)
+                            }
+                        }
                         
                     }.padding()
                     
@@ -182,7 +236,7 @@ struct ContentView: View {
                                     .foregroundColor(Color.white)
                             }
                             .padding([.top, .leading, .trailing])
-                            NavigationLink(destination: Map().navigationBarBackButtonHidden()){
+                            NavigationLink(destination: MapView().navigationBarBackButtonHidden()){
                                 Image(systemName: "mappin")
                                     .font(.system(size: 40))
                                     .aspectRatio(contentMode: .fit)
@@ -214,6 +268,15 @@ struct ContentView: View {
                     
                     
                 }
+                Image("Styled")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.bottom, 720.0)
+                    .frame(width: 190.0, height: 190.0)
+                    
+                    
+       
+               
             }
         }
     }

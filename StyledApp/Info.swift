@@ -35,7 +35,7 @@ struct Info: View {
                 .aspectRatio(contentMode: .fit)
                 .padding()
               VStack (spacing: 10){
-                Text("Where It All Begun")
+                Text("Where It All Began")
                   .font(.title2)
                   .fontWeight(.bold)
                   .multilineTextAlignment(.center)
@@ -103,7 +103,7 @@ struct Info: View {
                     .foregroundColor(Color.white)
                 }
                 .padding([.top, .leading, .trailing])
-                NavigationLink(destination: Map().navigationBarBackButtonHidden()){
+                NavigationLink(destination: MapView().navigationBarBackButtonHidden()){
                   Image(systemName: "mappin")
                     .font(.system(size: 40))
                     .aspectRatio(contentMode: .fit)
@@ -125,6 +125,13 @@ struct Info: View {
                 .ignoresSafeArea()
                 .foregroundColor(Color("Color5")))
           } //end of v stack at top
+          Image("Styled")
+              .resizable()
+              .aspectRatio(contentMode: .fill)
+              .padding(.bottom, 720.0)
+              .frame(width: 190.0, height: 190.0)
+              
+              
         }
       }
   }

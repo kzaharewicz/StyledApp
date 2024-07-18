@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4C10BA2C498B15005245BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C10B92C498B15005245BF /* MapView.swift */; };
 		BD5E66A82C46E9D8002F4C89 /* Customizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E66A72C46E9D8002F4C89 /* Customizer.swift */; };
-		BD5E66AA2C46E9F2002F4C89 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E66A92C46E9F2002F4C89 /* Map.swift */; };
 		BD5E66AC2C46E9FD002F4C89 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E66AB2C46E9FD002F4C89 /* Info.swift */; };
 		BDA572B02C46C81E005B5E7E /* StyledAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA572AF2C46C81E005B5E7E /* StyledAppApp.swift */; };
 		BDA572B22C46C81E005B5E7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA572B12C46C81E005B5E7E /* ContentView.swift */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4C10B92C498B15005245BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BD5E66A72C46E9D8002F4C89 /* Customizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customizer.swift; sourceTree = "<group>"; };
-		BD5E66A92C46E9F2002F4C89 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		BD5E66AB2C46E9FD002F4C89 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		BDA572AC2C46C81E005B5E7E /* StyledApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyledApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA572AF2C46C81E005B5E7E /* StyledAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledAppApp.swift; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 			children = (
 				BDA572AF2C46C81E005B5E7E /* StyledAppApp.swift */,
 				BDA572B12C46C81E005B5E7E /* ContentView.swift */,
+				BD4C10B92C498B15005245BF /* MapView.swift */,
 				BD5E66A72C46E9D8002F4C89 /* Customizer.swift */,
-				BD5E66A92C46E9F2002F4C89 /* Map.swift */,
 				BD5E66AB2C46E9FD002F4C89 /* Info.swift */,
 				BDA572B32C46C81F005B5E7E /* Assets.xcassets */,
 				BDA572B52C46C81F005B5E7E /* Preview Content */,
@@ -147,8 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDA572B22C46C81E005B5E7E /* ContentView.swift in Sources */,
+				BD4C10BA2C498B15005245BF /* MapView.swift in Sources */,
 				BD5E66A82C46E9D8002F4C89 /* Customizer.swift in Sources */,
-				BD5E66AA2C46E9F2002F4C89 /* Map.swift in Sources */,
 				BD5E66AC2C46E9FD002F4C89 /* Info.swift in Sources */,
 				BDA572B02C46C81E005B5E7E /* StyledAppApp.swift in Sources */,
 			);
